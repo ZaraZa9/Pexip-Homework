@@ -38,6 +38,7 @@ while len(words_to_place) > 0:
 
 
 test_case = ''.join([''.join(row) for row in grid])
+print("Grid generated")
 
 #running the test
 ws = WordSearch(test_case)

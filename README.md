@@ -11,10 +11,10 @@ The grid is represented as a single string of 1,000,000 characters. To make sear
 ## Search Strategies Considered
 Initially, we considered two main approaches:
 
-## Substring Hash Set:
+### Substring Hash Set:
 This approach would involve precomputing and storing all possible substrings (up to 24 characters long) for each row and column in hash sets. This apporached promised search complexity of O(1) for each lookup. However, generating and storing all possible substrings took far too long (O(n²) complexity) and used an excessive amount of memory, so it wasn’t practical for a grid of this sise.
 
-## Linear Search with Index Optimisation:
+### Linear Search with Index Optimisation:
 Instead of precomputing substrings, this approach involves scanning each row and column linearly. The key optimisation here is to look for the first letter of the target word and only then check if the entire substring matches. This approach is slower than a hash set lookup (O(n) complexity) but uses far less memory and consistently outperformed the hash set solution. This was the only solution that was fast and reliable enough to handle the grid's scale.
 
 ## Threading Optimisation

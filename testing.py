@@ -3,7 +3,7 @@ import random
 import string
 
 
-words_to_find = ["example", "aaaaaaaa"]
+words_to_find = ["example", "aaaaaaaa","bbbbbb"]
 
 
 grid = []
